@@ -20,7 +20,12 @@ public class ExampleControllerTest {
 
     @Test
     public void testPing() {
-        assertEquals("hello world", exampleController.ping());
+        assertEquals("hello worlds", exampleController.ping());
+    }
+
+    @Test
+    public void testName() {
+        assertEquals("Hello World! This is Edgar Pineda, 23440317 via Docker", exampleController.name());
     }
     
     @Test
